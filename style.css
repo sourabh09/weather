@@ -1,0 +1,253 @@
+body{
+background-color: #000;
+}
+
+.container{
+  width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+}
+.highcharts-credits,.highcharts-legend{
+  display: none;
+}
+.mdl-layout__drawer{
+  z-index: 6 !important;
+}
+#mainicon{
+  font-size: 48px;
+  margin-top: 24px;
+  color: #3E87F3;
+}
+.humi_wind>.wi{
+  color: #3E87F3;
+}
+
+.highlow>.material-icons{
+  vertical-align: middle !important;
+  font-size: 30px !important;
+}
+.main,.forecast{
+  margin-bottom: 20px;
+  /*border: 1px solid #1D1D1B;*/
+  padding: 18px;
+  font-size: 22px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  border-radius:6px;
+  color: #fff;
+  max-width: 600px;
+  margin: 10px auto;
+  /*background-image: linear-gradient(-45deg, #3EB072,#69B84F);*/ 
+}
+.forecast{
+  color: #000;
+  padding: 0px;
+  font-size: 26px;
+  letter-spacing: 3px;
+
+}
+.icontemp{
+  font-size: 94px;
+  display: inline;
+  line-height: 1.2;
+}
+.humi_wind{
+  display: inline-block;
+}
+.hw{
+  font-size: 28px;
+}
+.highlow{
+  font-size: 24px;
+}
+h4{
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  color: #FFF;
+}
+.submitform{
+  text-align: center;
+}
+
+.mdl-textfield{
+   max-width: 300px;
+    width: calc(100% - 100px);
+}
+#deletebutton{
+  display: none;
+  margin-bottom: 40px;
+}
+
+.main{
+  display: none;
+  letter-spacing: 2px;
+}
+.extra{
+  height: 20px;
+}
+.mdl-spinner{
+  display: none;
+}
+.dummy{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+    z-index: 9999;
+   
+  }
+#splash{
+font-family: 'Cairo', sans-serif;
+color:#000;
+position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #263238;
+   color: white;
+   text-align: center;
+}
+#footerlink>a{
+  
+  color: #fff !important;
+  text-decoration: none !important; 
+}
+#footerlink{
+  padding-top: 15px;
+  font-size: 16px;
+  font-family: 'Asap', sans-serif;
+}
+
+#footerlink>a>img{
+  max-width: 20px;
+}
+#footerlink>a>span{
+  vertical-align: middle;
+}
+
+#view{
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: none;
+}
+#accordion{
+  display: none;
+}
+.heading{
+  color: #FFF;
+  font-size: 20px;
+  font-family: 'Cairo', sans-serif;
+}
+.info{
+  font-size: 25px;
+  text-align: center;
+  color: #000;
+  margin-top: 60px;
+  display: none;
+  color: #FFF;
+  font-family: 'Cairo', sans-serif;
+}
+
+#datetime{
+  color: #FFF;
+  padding: 20px;
+  text-align: right;
+  margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+}
+
+
+/*******************************
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+#accordion{
+  border-radius: 8px;
+  width: 95%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+}
+    .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+        background-color: #FAFAFA;
+        border-color: #EEEEEE;
+    }
+
+    .panel-title {
+        font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+
+    .panel-title > a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+     .panel-title > a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .more-less {
+        float: right;
+        color: #212121;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE;
+    }
+
+  .panel-body{
+    text-align: center;
+  }
+
+    .panel-title > a:before {
+  float: right !important;
+  font-family: FontAwesome;
+  content: "\f106";
+}
+.panel-title > a.collapsed:before {
+  float: right !important;
+  content: "\f107";
+}
+.panel-title > a:hover,
+.panel-title > a:active,
+.panel-title > a:focus {
+  text-decoration: none;
+}
+.panel-title{
+  text-align: left;
+  font-size: 20px;
+}
