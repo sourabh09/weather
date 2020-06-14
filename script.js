@@ -114,7 +114,7 @@ $.ajax({
 
   $('.container').append(
 
-    '<div class="main"><div class="place">'+'<i class="material-icons">room</i> '+ city +" | "+region+'</div><div class="icontemp">'+"<i id=mainicon class='wi wi-yahoo-"+ data.current_observation.condition.code +"'></i>"
+    '<div class="main"><div class="place">'+'<i class="material-icons">room</i> '+ city +" &#183; "+region+'</div><div class="icontemp">'+"<i id=mainicon class='wi wi-yahoo-"+ data.current_observation.condition.code +"'></i>"
     +"<br>"+temp+ '\xB0' +'</div>'+'<div class="description">'+description+'</div><div class="highlow">'+highlow+'</div></div>'
 
     );
