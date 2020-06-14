@@ -17,7 +17,6 @@ background-color: #000;
 }
 #mainicon{
   font-size: 48px;
-  margin-top: 24px;
   color: #3E87F3;
 }
 .humi_wind>.wi{
@@ -38,7 +37,7 @@ background-color: #000;
   border-radius:6px;
   color: #fff;
   max-width: 600px;
-  margin: 10px auto;
+  margin: 0 auto;
   /*background-image: linear-gradient(-45deg, #3EB072,#69B84F);*/ 
 }
 .forecast{
@@ -57,7 +56,7 @@ background-color: #000;
   display: inline-block;
 }
 .hw{
-  font-size: 28px;
+  font-size: 24px;
 }
 .highlow{
   font-size: 24px;
