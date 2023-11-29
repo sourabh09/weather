@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" type="image/png" href="">
+<meta name="description" content="A MDL weather web app with local storage by QA." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway|Damion|Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-amber.min.css" />
+<script src="https://storage.googleapis.com/code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="apple-touch-icon" href="weather.png">
+
+<!-- <link rel="shortcut icon" type="image/png" href="weather.png"> -->
+<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+<title>Weather</title>
+</head>
+<body onload="checkWeather()">
+    <!-- <div id="search_icon"><span class="material-icons">
+        search
+        </span></div> -->
+        <div class="main-container">
+        <div class="search-container">
+            <form action="javascript:getData()">
+              <input class="search" id="searchleft" type="text" placeholder="Enter location..." autocomplete="off">
+              <label class="button searchbutton" for="searchleft"><span class="mglass">&#9906;</span></label>
+            </form>
+          </div>
+          <div class="location">N/A</div>
+
+          <div id="weather-container">
+            <div class="outerbox">
+              <div id="weather-icon">
+                <img id="weather_icon" src="" alt="Weather Icon">
+            </div>
+            <div id="temperature">N/A</div>
+          </div>
+            <div id="weather-description">N/A</div>
+            <div class="temp_high">N/A</div>
+            <div class="temp_low">N/A</div>
+        </div>
+
+        <div id="weather-container2">
+          <div id="additional-info">
+              <div class="Humidity">N/A</div>
+              <div class="Wind">N/A</div>
+              <div class="Pressure">N/A</div>
+              <div class="Visibility">N/A</div>
+          </div>
+      </div>
+      <button onclick="deleteSavedLocation()" class="button-2" role="button"><span id="location_icon" class="material-icons">delete</span> Delete location</button>
+      </div>
+</body>
+</html>
