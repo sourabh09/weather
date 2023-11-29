@@ -11,7 +11,7 @@ function getData() {
     
     $.ajax({
        
-        url: "http://api.weatherapi.com/v1/forecast.json?key=ad1f01cca57f40b2909103412232604&q="+user_location,
+        url: "https://api.weatherapi.com/v1/forecast.json?key=ad1f01cca57f40b2909103412232604&q="+user_location,
         
         success: function(data) {
             
