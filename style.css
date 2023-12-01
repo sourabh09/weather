@@ -1,8 +1,9 @@
 body {
-	background-image: url(pattern.svg);
+	background-image: url(pattern3.svg);
 	margin: 0;
 	padding: 0;
 	height: 100vh;
+	background-size: cover;
 }
 
 #weather-container {
@@ -10,10 +11,10 @@ body {
 	border-radius: 12px;
 	margin: 10px;
 	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
 	color: #FFF;
 	font-family:'Raleway', sans-serif;
 	font-size: 18px;
-	display: none;
 }
 
 #weather-container2 {
@@ -21,11 +22,11 @@ body {
 	border-radius: 12px;
 	margin: 10px;
 	backdrop-filter: blur(12px);
-	color: #808080;
+	-webkit-backdrop-filter: blur(12px);
+	color: #FFF;
 	font-family:'Raleway', sans-serif;
 	font-size: 24px;
-	line-height: normal;
-	display: none;
+	line-height: 1.7;
 }
 
 .location{
@@ -34,7 +35,8 @@ body {
     margin: 30px;
     font-size: 24px;
     font-weight: bold;
-	display: none;
+	display: flex;
+	align-items: center;
 }
 
 #searchleft{
@@ -45,6 +47,7 @@ body {
 #weather-icon {
 	margin-bottom: 10px;
 	float: left;
+	margin-left: 12px;
 }
 
 #weather-description {
@@ -188,8 +191,9 @@ body {
 }
 
 .main-container{
-	max-width: 600px;
+	max-width: 400px;
     margin: 0 auto;
+	display: none;
 }
 
 .temp_high, .temp_low{
@@ -224,5 +228,7 @@ body {
   transform: translate(-50%);
   padding: 10px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
 
 }

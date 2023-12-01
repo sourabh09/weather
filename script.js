@@ -34,10 +34,10 @@ function getData() {
             let temp_high = data.forecast.forecastday[0].day.maxtemp_c;
             let temp_low = data.forecast.forecastday[0].day.mintemp_c;
             
-            $(".location").html('<span id="location_icon" class="material-icons">location_on</span> '+location);
+            $(".location").html('<span id="location_icon" class="material-icons">location_on</span>&nbsp'+location);
             $("#temperature").html(temp+"°C");
 
-            $(".temp_high").html("High : "+temp_high+"°C");
+            $(".temp_high").html("High : "+temp_high+"°C  |  ");
             $(".temp_low").html("Low : "+temp_low+"°C");
 
             $("#weather-description").html(condition);
@@ -48,9 +48,7 @@ function getData() {
             $(".Humidity").html("Humidity : "+humidity);
             $(".Visibility").html("Visibility : "+visibility);
 
-            $(".location").show();
-            $("#weather-container").show();
-            $("#weather-container2").show();
+            $(".main-container").show('slow');
         }
             
         })
